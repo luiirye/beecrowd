@@ -13,17 +13,12 @@ public class beecrowd1015 {
         double y1 = sc.nextDouble();
         double x2 = sc.nextDouble();
         double y2 = sc.nextDouble();
-        
         double distancia = (x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1);
-        
-
-        System.out.println(Math.sqrt(distancia));
-        
-        
-        
-        
-        
+        double raiz = Math.sqrt(distancia);
+    
+        System.out.printf("%.4f%n", raiz);
         
         sc.close();
     }
 }
+// Accepted
