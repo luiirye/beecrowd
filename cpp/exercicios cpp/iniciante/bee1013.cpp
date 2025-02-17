@@ -24,3 +24,5 @@ int main(){
 double eh_maior(double A, double B, double C){
     double maiorAB = (A+B+abs+(A - B))/2;
 }
+
+// incompleto
