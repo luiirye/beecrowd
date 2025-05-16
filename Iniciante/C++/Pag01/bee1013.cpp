@@ -17,12 +17,25 @@ int maior(int, int, int);
 main(){
     
     //  Variáveis
-    int A, B, C;
+    int A, B, C, D;
+    scanf("%d", &A);
+    scanf("%d", &B);
+    scanf("%d", &C);
+    
+    D = maior(A, B, C);
+
+    printf("%d eh o maior\n", D);
     
     return 0;
 }
 
 // Funções
 int maior(int a, int b, int c){
-    int maiorab = (a+b + abs(a-b)) / 2;
+    
+    int maiorAB = (a + b + abs(a - b)) / 2;
+    int maiorABC = (maiorAB + c + abs(maiorAB - c)) / 2;
+
+    return maiorABC;
 }
+
+// Accepted
