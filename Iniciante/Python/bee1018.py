@@ -10,5 +10,7 @@ print(N // 10 , 'nota(s) de R$ 10,00')
 N %= 10
 print(N // 5 , 'nota(s) de R$ 5,00')
 N %= 5
+print(N // 2 , 'nota(s) de R$ 2,00')
+N %= 2
 print(N // 1 , 'nota(s) de R$ 1,00')
 N %= 1
