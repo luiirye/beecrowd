@@ -1,15 +1,18 @@
-## Flores de fogo
-## Para conseguir uma flor de fogo, deve procurar em uma FLORESTA ANTES da MEIA-NOITE na VÉSPERA da NOC KUPATY.
-## Exatamente à meia noite, essa flor floresceria.
-## Determinar SE o caçador MORRE ou FICA RICO com a colheita da flor
+# EOF -> End of File (Fim do Arquivo)
 
-L1 = list(map(int, input().split()))[:6]
-L2 = list(map(int, input().split()))[:6]
-L3 = list(map(int, input().split()))[:6]
-L4 = list(map(int, input().split()))[:6]
+import math
+import sys
 
+for linha in sys.stdin:
 
-print(f'{L1}\n {L2}\n {L3}\n {L4}\n')
+# Lê os dados
+    R1, X1, Y1, R2, X2, Y2 = map(int, linha.split())
 
-## Para o caçador ficar RICO, o círculo da FLOR precisa estar totalmente dentro do Círculo do caçador
-## distância 
+# Calcula distância entre os centros
+    distancia = math.sqrt((X2 - X1)**2 + (Y2 - Y1)**2)
+
+# Verifica se a flor está completamente dentro
+    if distancia + R2 <= R1:
+        print("RICO")
+    else:
+        print("MORTO")
