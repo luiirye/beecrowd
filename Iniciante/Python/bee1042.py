@@ -6,5 +6,5 @@ c = float(c)
 
 numeros = [a, b, c]
 
-numeros.sort()
-print(f'{numeros}\n')
+for i in numeros:
+    print(f'{numeros}\n')
