@@ -1,0 +1,16 @@
+class Solucao:
+    
+    n1 = float(input())
+    n2 = float(input())
+    n3 = float(input())
+    n4 = float(input())
+    n5 = float(input())
+
+    lista = [n1,n2,n3,n4,n5]
+    cont = 0
+
+    for i in lista:
+        if i % 2 == 0:
+            cont += 1
+        
+    print(f'{cont} valores pares')
