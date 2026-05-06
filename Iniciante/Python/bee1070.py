@@ -1,8 +1,10 @@
-class Solucao:
+class Solucao():
+    
     x = int(input())
     
-    # imprimir valores ímpares a partir de x, 6 vezes no máximo.
-    
-    for i in range(x, x + 1):
-        if i % 2 == 1:
-            print(i)
+    for i in range(6):
+        if x % 2 == 0:
+            x += 1
+            print(x)
+            
+            
