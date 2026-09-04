@@ -1,2 +1,24 @@
-# ./idea
-# ./vscode
+# IDEs
+.idea/
+*.iml
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# C/C++ build artifacts
+build/
+output/
+*.exe
+*.out
+*.o
+*.obj
+
+# Node.js
+node_modules/
+
+# Operating systems
+.DS_Store
+Thumbs.db

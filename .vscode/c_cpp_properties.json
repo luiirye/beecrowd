@@ -1,17 +1,14 @@
 {
   "configurations": [
     {
-      "name": "windows-gcc-x86",
+      "name": "Default",
       "includePath": [
         "${workspaceFolder}/**"
       ],
-      "compilerPath": "C:\\mysys64\\ucrt64\\bin\\gcc.exe",
-      "cStandard": "${default}",
-      "cppStandard": "${default}",
-      "intelliSenseMode": "windows-gcc-x86",
-      "compilerArgs": [
-        ""
-      ]
+      "compilerPath": "g++",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "${default}"
     }
   ],
   "version": 4
